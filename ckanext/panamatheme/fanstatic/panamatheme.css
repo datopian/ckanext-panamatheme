@@ -120,8 +120,8 @@ body {
     height: 100%;
 }
 
-.masthead .nav-collapse {
-    position: absolute;
+.masthead input {
+    margin-top: 70px !important;
     left: 50%;
     right: 25%;
     bottom: 20px;
