@@ -1,0 +1,51 @@
+{% ckan_extends %}
+
+{% block content %}
+    <div class="homepage">
+        <div class="container">
+            {{ self.flash() }}
+
+            <div class="maincat-group">
+                <h2>{{ _('Temáticas') }}</h2>
+                <div class="row">
+                <ul>
+                    {% for group in h.get_featured_groups(count=12) %}
+                        {% snippet "home/snippets/group_item.html", group=group, position=loop.index %}
+                    {% endfor %}
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="delimiter"></div>
+        <div class="separator"></div>
+        <div class="container">
+            <div class="row">
+                <section class="span6">
+                    <h2>{{ _('Datos recenties') }}</h2>
+                    {% snippet 'home/snippets/recently_updated_datasets.html' %}
+                </section>
+
+                <section class="span6">
+                    <h2>{{ _('Etiquetas') }}</h2>
+                    {% set posts = h.get_recent_blog_posts(3) %}
+                    <ul class="latest-posts">
+                        {% for post in posts %}
+                            <li class="well">
+                      <span class="post">
+                        <h4><a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a></h4>
+
+                        <span class="text">{{ h.markdown_extract(post.content) }}</span>
+                        <a class="more"
+                           href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{% trans %}
+                            More{% endtrans %} »</a>
+                        </span>
+                                <span class="date label"> {{ h.render_datetime(post.publish_date) }} </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}

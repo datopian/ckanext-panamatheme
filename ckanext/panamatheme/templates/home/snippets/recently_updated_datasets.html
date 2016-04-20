@@ -1,0 +1,16 @@
+<ul class="latest-datasets">
+{% for dataset in h.get_recently_updated_panama_datasets() %}
+    <li class="well">
+        <h4><a href="{{ h.url_for('dataset_read', id=dataset.name) }}">{{ dataset.title }}</a></h4>
+        <span class="text">{{ h.markdown_extract(dataset.notes) }}</span>
+        {% if dataset.resources %}
+        <ul class="formats">
+        {% for resource in dataset.resources %}
+            <li class="label">{{ resource.format }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+<a href="{{ h.url_for('search') }}">View all datasets »</a>

@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,300);
+
+html {
+    background: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1100px;
+}
+
+[role="main"], .main {
+    background: #ffffff;
+    background-color: #ffffff;
+}
+
+.hero {
+    background: #ffffff;
+}
+
+.relative {
+    position: relative;
+}
+
+.pull-bottomright {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+.float-right {
+    float: right;
+}
+
+.account-masthead {
+    background: #ffffff;
+}
+
+.account-masthead .account ul li a {
+    color: black;
+}
+
+#logo {
+    height: 120px;
+}
+
+.delimiter {
+    height: 4px;
+    background: url("/delimiter.png");
+    background-position: 50% 0;
+}
+
+.separator {
+    height: 12px;
+    background: rgba(249, 249, 249, 1);
+    background: -moz-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(98, 137, 182, 1) 40%, rgba(98, 137, 182, 1) 60%, rgba(249, 249, 249, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(40%, rgba(98, 137, 182, 1)), color-stop(60%, rgba(98, 137, 182, 1)), color-stop(100%, rgba(249, 249, 249, 1)));
+    background: -webkit-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(98, 137, 182, 1) 40%, rgba(98, 137, 182, 1) 60%, rgba(249, 249, 249, 1) 100%);
+    background: -o-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(98, 137, 182, 1) 40%, rgba(98, 137, 182, 1) 60%, rgba(249, 249, 249, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(98, 137, 182, 1) 40%, rgba(98, 137, 182, 1) 60%, rgba(249, 249, 249, 1) 100%);
+    background: linear-gradient(to right, rgba(249, 249, 249, 1) 0%, rgba(98, 137, 182, 1) 40%, rgba(98, 137, 182, 1) 60%, rgba(249, 249, 249, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f9f9f9', GradientType=1);
+}
+
+.masthead {
+    height: 140px;
+    background: url("/header.jpg");
+    background-position: 50% 0;
+}
+
+.nav {
+    padding: 0px;
+    margin: 0px;
+}
+
+#mainnav {
+    padding: 0px;
+}
+
+#mainnav a {
+    color: #000;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.maincat-group {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 6%;
+}
+
+.maincat {
+    list-style-type: none;
+    text-align: center;
+}
+
+.maincat img {
+    height: 90px;
+}
+
+.maincat img:hover {
+    opacity: 0.5;
+}
+
+.homepage {
+    background: #ffffff;
+    background-color: #ffffff;
+}
+
+.account-masthead .account ul li {
+    font-style: italic;
+    border: 0px;
+}
+
+.masthead .container {
+    height: 100%;
+}
+
+.masthead .nav-collapse {
+    position: absolute;
+    left: 50%;
+    right: 25%;
+    bottom: 20px;
+    margin-left: -400px;
+}
+
+.masthead .site-search input {
+    width: 800px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.site-footer {
+    background: rgba(249, 249, 249, 1);
+    background: -moz-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(208, 208, 208, 1) 50%, rgba(249, 249, 249, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(50%, rgba(208, 208, 208, 1)), color-stop(100%, rgba(249, 249, 249, 1)));
+    background: -webkit-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(208, 208, 208, 1) 50%, rgba(249, 249, 249, 1) 100%);
+    background: -o-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(208, 208, 208, 1) 50%, rgba(249, 249, 249, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(249, 249, 249, 1) 0%, rgba(208, 208, 208, 1) 50%, rgba(249, 249, 249, 1) 100%);
+    background: linear-gradient(to right, rgba(249, 249, 249, 1) 0%, rgba(208, 208, 208, 1) 50%, rgba(249, 249, 249, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f9f9f9', GradientType=1);
+}
+
+.site-footer img {
+    margin-top: 30px;
+    width: 150px;
+}
+
+.legal {
+    color: darkgray;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}

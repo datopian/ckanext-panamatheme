@@ -1,0 +1,30 @@
+<div class="separator"></div>
+<div class="delimiter"></div>
+<footer class="site-footer">
+    <div class="container">
+        {% block footer_content %}
+            <div class="row">
+                <div class="span4 text-center">
+                    <img src="/antailogo.png">
+                </div>
+                <div class="span4 text-center">
+                    <img src="/autoridad-02.png">
+                </div>
+                <div class="span4 text-center">
+                    <img src="/ckan.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12 text-center legal">
+                    All trademarks referenced herein are the properties of their respected owners.<br>All rights reserved.
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+
+    {% block footer_debug %}
+        {% if g.debug %}
+            {% include 'snippets/debug.html' %}
+        {% endif %}
+    {% endblock %}
+</footer>

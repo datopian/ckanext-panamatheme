@@ -1,0 +1,38 @@
+{% ckan_extends %}
+
+{% block header_account_container_content %}
+    <div class="row relative">
+        <div class="span7" style="padding-bottom: 5px;">
+            <img src="/datoslogo.png" id="logo" usemap="#map">
+        </div>
+
+        <map name="map">
+            <area shape="rect" coords="0,0,240,126" href="{{ h.url('home') }}" alt="Homepage">
+        </map>
+
+        <div class="span5 pull-right">
+            <div>
+                {{ super() }}
+            </div>
+            <div id="mainnav" class="pull-bottomright">
+                <nav class="section navigation">
+                    <ul class="nav nav-pills float-right">
+                        {{ h.build_nav_main(
+                ('search', _('DATOS')),
+                ('group_index', _('TEMÁTICAS')),
+                ('organizations_index', _('APPS')),
+                ('about', _('CONTÁCTENOS')),
+                ('about', _('ACERCA DE'))
+                ) }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block header_site_navigation %}
+{% endblock %}
+
+{% block header_logo %}
+{% endblock %}
